@@ -35,6 +35,15 @@
     </div>
 </div>
 
+<div [ngClass]= "{'hide': affirm}" class="bolt-checkout-container">
+    <div class = "exit">
+        <span (click)=  "affirmCheckout()">x</span>
+    </div>
+    <div class= "container-test">
+      <p>Affirm Checkout</p>
+    </div>
+</div>
+
 <div class="cart-container">
   <div class="cart">
       <div class="item image"><img src="../../assets/sneaker_1.jpg" alt=""></div>
@@ -45,6 +54,7 @@
           <button (click)="boltCheckout()" id="bolt-checkout-btn" class="checkout-btn">Bolt</button>
           <button (click)="paypalCheckout()" id="paypal-checkout-btn" class="checkout-btn">Paypal</button>
           <button (click)="giftCheckout()" id="gift-checkout-btn" class="checkout-btn">Gift Card</button>
+          <button (click)="affirmCheckout()" id="affirm-checkout-btn" class="checkout-btn">Affirm</button>
       </div>
   </div>
 </div>
