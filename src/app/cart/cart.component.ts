@@ -12,7 +12,6 @@ export class CartComponent implements OnInit {
   paypal:boolean=true;
   affirm:boolean=true;
   checked: boolean=false;
-  showAlert:boolean=true;
   
   
 
